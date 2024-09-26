@@ -157,4 +157,5 @@ function isMobileDevice() {
     if (isMobileDevice()) {
         // Prompt the user to switch to a PC
         alert("يرجى فتح الموقع من جهاز كمبيوتر للوصول إلى المحتوى.");
+	window.close();
     }
