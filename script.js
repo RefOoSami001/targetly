@@ -157,6 +157,4 @@ function isMobileDevice() {
     if (isMobileDevice()) {
         // Prompt the user to switch to a PC
         alert("يرجى فتح الموقع من جهاز كمبيوتر للوصول إلى المحتوى.");
-        // Optionally, redirect to another page or close the tab
-        window.location.href = "https://www.example.com"; // Change this URL to redirect
     }
