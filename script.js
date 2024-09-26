@@ -149,3 +149,14 @@ floating_btn.addEventListener('click', () => {
 close_btn.addEventListener('click', () => {
 	social_panel_container.classList.remove('visible')
 });
+function isMobileDevice() {
+        return /Mobi|Android/i.test(navigator.userAgent);
+    }
+
+    // Check if the user is on a mobile device
+    if (isMobileDevice()) {
+        // Prompt the user to switch to a PC
+        alert("يرجى فتح الموقع من جهاز كمبيوتر للوصول إلى المحتوى.");
+        // Optionally, redirect to another page or close the tab
+        window.location.href = "https://www.example.com"; // Change this URL to redirect
+    }
