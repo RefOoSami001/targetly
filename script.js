@@ -165,3 +165,21 @@ jQuery(window).on('scroll', function() {
 	}
 
 });
+
+const burgerMenu = document.getElementById("burger-menu");
+const sideDrawer = document.getElementById("side-drawer");
+const overlay = document.getElementById("overlay");
+
+burgerMenu.addEventListener("click", function () {
+  burgerMenu.classList.toggle("open");
+  sideDrawer.classList.toggle("open");
+  overlay.classList.toggle("active");
+});
+
+overlay.addEventListener("click", function () {
+  burgerMenu.classList.remove("open");
+  sideDrawer.classList.remove("open");
+  overlay.classList.remove("active");
+});
+
+
