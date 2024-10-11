@@ -607,7 +607,11 @@ body {
     left: 60%;
     rotate: -50deg;
 }
-
+@media screen and (max-width: 768px) {
+  .arrow {
+      display: none;
+  }
+}
 
 /* Counter Section */
 .section {
